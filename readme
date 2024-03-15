@@ -1,0 +1,21 @@
+weewx-l7
+Copyright 2024 Matthew Wall
+Distributed under terms of the GPLv3
+
+This is a WeeWX driver for the Raddy L7 LoRa weather station.
+
+
+===============================================================================
+Installation
+
+1) install the driver
+
+weectl extension install https://github.com/matthewwall/weewx-l7/archive/master.zip
+
+2) configure the driver
+
+weectl station reconfigure --driver=user.l7 --no-prompt
+
+3) restart WeeWX
+
+sudo systemctl restart weewx
