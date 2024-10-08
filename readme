@@ -19,3 +19,18 @@ weectl station reconfigure --driver=user.l7 --no-prompt
 3) restart WeeWX
 
 sudo systemctl restart weewx
+
+
+===============================================================================
+Testing
+
+You can test the driver by invoking it directly on the command line.  Specify
+the IP address of the station.  You should see WeeWX loop packets with the
+current sensor data from the station.
+
+python3 l7.py --addr 192.168.x.y
+
+You might have to set the PYTHONPATH to find the WeeWX code.  For example, if
+WeeWX was installed using apt or yum, the WeeWX code is in /usr/share/weewx:
+
+PYTHONPATH=/usr/share/weewx python3 l7.py --help

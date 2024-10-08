@@ -10,7 +10,7 @@ def loader():
 class L7Installer(ExtensionInstaller):
     def __init__(self):
         super(L7Installer, self).__init__(
-            version="0.1",
+            version="0.2",
             name='l7',
             description='Capture data from Raddy L7 LoRa weather station',
             author="Matthew Wall",
